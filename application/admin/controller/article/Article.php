@@ -48,6 +48,7 @@ class Article extends AuthController
         }else{
             $tree = [];
             $this->assign(compact('tree'));
+            $where['cid'] = null;
         }
 
 
