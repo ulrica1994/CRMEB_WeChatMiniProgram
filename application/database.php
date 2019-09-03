@@ -13,13 +13,13 @@ return [
     // 数据库类型
     'type'            => 'mysql',
     // 服务器地址
-    'hostname'        => 'localhost',
+    'hostname'        => '127.0.0.1',
     // 数据库名
-    'database'        => 'demo25xcx_crmeb',
+    'database'        => 'crmeb',
     // 用户名
-    'username'        => 'demo25xcx_crmeb',
+    'username'        => 'crmeb',
     // 密码
-    'password'        => 'zBerrkhQWAYx6i2Q',
+    'password'        => '8JcTtJbE57HbDTyc',
 
     // 端口
     'hostport'        => '3306',
