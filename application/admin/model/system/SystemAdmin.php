@@ -49,7 +49,7 @@ class SystemAdmin extends ModelBasic
         if($adminInfo['pwd'] != md5($pwd)) return self::setErrorInfo('账号或密码错误，请重新输入');
         if(!$adminInfo['status']) return self::setErrorInfo('该账号已被关闭!');
         self::setLoginInfo($adminInfo);
-        HookService::afterListen('system_admin_login',$adminInfo,null,false,SystemBehavior::class);
+//        HookService::afterListen('system_admin_login',$adminInfo,null,false,SystemBehavior::class);
         return true;
     }
 

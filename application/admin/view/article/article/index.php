@@ -10,7 +10,7 @@
     <div class="col-sm-12">
         <div class="ibox">
             <div class="ibox-title">
-                <button type="button" class="btn btn-w-m btn-primary" onclick="$eb.createModalFrame(this.innerText,'{:Url('create',array('cid'=>$cid))}',{w:1000,h:760})">添加文章</button>
+                <button type="button" class="btn btn-w-m btn-primary" onclick="$eb.createModalFrame(this.innerText,'{:Url('create')}',{w:1000,h:760})">添加文章</button>
                 <div style="margin-top: 2rem"></div>
                 <div class="row">
                     <div class="m-b m-l">

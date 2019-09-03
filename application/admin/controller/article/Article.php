@@ -21,7 +21,11 @@ class Article extends AuthController
 {
     /**
      * 显示后台管理员添加的图文
+     * @param int $pid
      * @return mixed
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\exception\DbException
      */
     public function index($pid = 0)
     {
@@ -29,7 +33,7 @@ class Article extends AuthController
             ['title',''],
             ['cid','']
         ],$this->request);
-        $pid = $this->request->param('pid');
+//        $pid = $this->request->param('pid');
         $this->assign('where',$where);
         $where['merchant'] = 0;//区分是管理员添加的图文显示  0 还是 商户添加的图文显示  1
         $catlist = ArticleCategoryModel::where('is_del',0)->select()->toArray();

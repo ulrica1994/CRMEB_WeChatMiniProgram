@@ -276,22 +276,22 @@
 {include file="public/style"}
 <script src="{__ADMIN_PATH}js/index.js"></script>
 <script>
-    $(function() {
-        function getnotice() {
-            $.getJSON("{:Url('Jnotice')}",function(res){
-                console.log(res);
-                var info = eval("("+res+")");
-                var data = info.data;
-                $('#msgcount').html(data.msgcount);
-                $('#ordernum').html(data.ordernum + '个');
-                $('#inventory').html(data.inventory + '个');
-                $('#commentnum').html(data.commentnum + '个');
-                $('#reflectnum').html(data.reflectnum + '个');
-            });
-        }
-        getnotice();
-        setInterval(getnotice, 3000);
-    });
+    // $(function() {
+    //     function getnotice() {
+    //         $.getJSON("{:Url('Jnotice')}",function(res){
+    //             console.log(res);
+    //             var info = eval("("+res+")");
+    //             var data = info.data;
+    //             $('#msgcount').html(data.msgcount);
+    //             $('#ordernum').html(data.ordernum + '个');
+    //             $('#inventory').html(data.inventory + '个');
+    //             $('#commentnum').html(data.commentnum + '个');
+    //             $('#reflectnum').html(data.reflectnum + '个');
+    //         });
+    //     }
+    //     getnotice();
+    //     setInterval(getnotice, 3000);
+    // });
 
 </script>
 </body>
