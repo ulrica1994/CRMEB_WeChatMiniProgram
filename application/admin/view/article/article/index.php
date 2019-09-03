@@ -54,7 +54,7 @@
                         </td>
 
                         <td class="text-center">
-                            <button class="btn btn-info btn-xs" type="button"  onclick="$eb.createModalFrame('编辑','{:Url('create',array('id'=>$vo['id'],'cid'=>$cid))}',{w:1000,h:760})"><i class="fa fa-paste"></i> 编辑</button>
+                            <button class="btn btn-info btn-xs" type="button"  onclick="$eb.createModalFrame('编辑','{:Url('create',array('id'=>$vo['id'],'cid'=>$vo['cid']))}',{w:1000,h:760})"><i class="fa fa-paste"></i> 编辑</button>
 
                             <button class="btn btn-warning btn-xs del_news_one" data-id="{$vo.id}" type="button" data-url="{:Url('delete',array('id'=>$vo['id']))}" ><i class="fa fa-warning"></i> 删除
 
